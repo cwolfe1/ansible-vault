@@ -21,7 +21,9 @@ import yaml
 
 from ._compat import VaultLib, decode_text
 
-_ANSIBLE_VER = float(".".join(ansible.__version__.split(".")[:2]))
+#attempting to quick_fix this line based on 'https://github.com/tomoh1r/ansible-vault/pull/34'
+# _ANSIBLE_VER = float(".".join(ansible.__version__.split(".")[:2]))
+_ANSIBLE_VER = "2.10"
 
 
 class Vault(object):
